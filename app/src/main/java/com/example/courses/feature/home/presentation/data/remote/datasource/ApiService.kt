@@ -1,0 +1,11 @@
+package com.example.courses.feature.home.presentation.data.remote.datasource
+
+import com.example.courses.feature.home.presentation.data.remote.model.CoursesDto
+import retrofit2.http.GET
+
+const val BASE_URL = "https://courses.free.beeceptor.com/"
+
+interface ApiService {
+    @GET("courses")
+    suspend fun getCourses(): CoursesDto
+}

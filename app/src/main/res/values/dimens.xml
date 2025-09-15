@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_extra">4dp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="medium_small">12dp</dimen>
+    <dimen name="medium">16dp</dimen>
+    <dimen name="sign_in_field_corner">30dp</dimen>
+    <dimen name="bookmark_size">36dp</dimen>
+    <dimen name="loading_indicator_size">48dp</dimen>
+    <dimen name="glass_pill_vertical">4dp</dimen>
+    <dimen name="glass_pill_horizontal">6dp</dimen>
+    <dimen name="course_card_image_height">114dp</dimen>
+    <dimen name="header_height">56dp</dimen>
+    <dimen name="social_button_height">40dp</dimen>
+    <dimen name="social_button_corner">30dp</dimen>
+</resources>

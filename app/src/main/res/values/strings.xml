@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Courses</string>
+    <string name="nav_home">Главная</string>
+    <string name="nav_bookmarks">Избранное</string>
+    <string name="nav_account">Аккаунт</string>
+    <string name="course_more">Подробнее</string>
+    <string name="search">Поиск…</string>
+    <string name="sort_by">По дате добавления</string>
+    <string name="nothing_found">Ничего не найдено</string>
+    <string name="bookmarks_title">Избранное</string>
+    <string name="error">Ошибка</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="sign_in">Вход</string>
+    <string name="email_field_label">Email</string>
+    <string name="email_field_placeholder">example@gmail.com</string>
+    <string name="password_field_label">Пароль</string>
+    <string name="sign_in_button">Вход</string>
+    <string name="password_field_placeholder">Введите пароль</string>
+    <string name="no_account">Нет аккаунта?</string>
+    <string name="sign_up">Регистрация</string>
+    <string name="forgot_password">Забыл пароль</string>
+</resources>
