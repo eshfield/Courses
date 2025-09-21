@@ -1,6 +1,6 @@
-package com.example.courses.feature.home.presentation.data.remote.datasource
+package com.example.courses.feature.home.data.remote.datasource
 
-import com.example.courses.feature.home.presentation.data.remote.model.CoursesDto
+import com.example.courses.feature.home.data.remote.model.CoursesDto
 import retrofit2.http.GET
 
 const val BASE_URL = "https://courses.free.beeceptor.com/"

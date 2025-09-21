@@ -1,8 +1,8 @@
-package com.example.courses.feature.home.presentation.data.remote.repository
+package com.example.courses.feature.home.data.remote.repository
 
-import com.example.courses.feature.home.presentation.data.remote.datasource.ApiService
+import com.example.courses.feature.home.data.remote.datasource.ApiService
 import com.example.courses.core.domain.model.Course
-import com.example.courses.feature.home.presentation.domain.repository.CoursesRepository
+import com.example.courses.feature.home.domain.repository.CoursesRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

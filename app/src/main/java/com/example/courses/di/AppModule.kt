@@ -6,10 +6,10 @@ import com.example.courses.feature.bookmarks.domain.repository.BookmarksReposito
 import com.example.courses.feature.bookmarks.presentation.BookmarksViewModel
 import com.example.courses.feature.home.presentation.CourseDetailsViewModel
 import com.example.courses.feature.home.presentation.HomeScreenViewModel
-import com.example.courses.feature.home.presentation.data.remote.datasource.ApiService
-import com.example.courses.feature.home.presentation.data.remote.datasource.BASE_URL
-import com.example.courses.feature.home.presentation.data.remote.repository.RemoteCoursesRepository
-import com.example.courses.feature.home.presentation.domain.repository.CoursesRepository
+import com.example.courses.feature.home.data.remote.datasource.ApiService
+import com.example.courses.feature.home.data.remote.datasource.BASE_URL
+import com.example.courses.feature.home.data.remote.repository.RemoteCoursesRepository
+import com.example.courses.feature.home.domain.repository.CoursesRepository
 import com.example.courses.feature.signin.presentation.SignInViewModel
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType

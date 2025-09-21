@@ -1,4 +1,4 @@
-package com.example.courses.feature.home.presentation.domain.repository
+package com.example.courses.feature.home.domain.repository
 
 import com.example.courses.core.domain.model.Course
 

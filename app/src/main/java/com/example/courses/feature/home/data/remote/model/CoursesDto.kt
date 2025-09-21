@@ -1,4 +1,4 @@
-package com.example.courses.feature.home.presentation.data.remote.model
+package com.example.courses.feature.home.data.remote.model
 
 import com.example.courses.core.domain.model.Course
 import kotlinx.serialization.Serializable

@@ -5,7 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.courses.core.presentation.CoursesUiState
 import com.example.courses.core.presentation.model.CourseUiModel
 import com.example.courses.feature.bookmarks.data.local.repository.LocalBookmarksRepository
-import com.example.courses.feature.home.presentation.data.remote.repository.RemoteCoursesRepository
+import com.example.courses.feature.home.data.remote.repository.RemoteCoursesRepository
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
