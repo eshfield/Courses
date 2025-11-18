@@ -60,7 +60,7 @@ fun CourseList(
                                     onAddBookmark(course.id)
                                 }
                             },
-                            modifier = Modifier.animateItem()
+                            modifier = Modifier.animateItem(),
                         )
                     }
                 }

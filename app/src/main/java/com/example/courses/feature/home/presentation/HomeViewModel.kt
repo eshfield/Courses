@@ -12,9 +12,8 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.firstOrNull
-import kotlinx.coroutines.flow.flatMapLatest
-import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.launchIn
+import kotlinx.coroutines.flow.transformLatest
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalCoroutinesApi::class)
@@ -25,16 +24,14 @@ class HomeScreenViewModel(
     private val _coursesUiState = MutableStateFlow<CoursesUiState>(CoursesUiState.Loading)
     val coursesUiState = _coursesUiState.asStateFlow()
 
-    private val loadCoursesTrigger = MutableSharedFlow<Unit>(replay = 1)
-    private val coursesFlow = loadCoursesTrigger
-        .flatMapLatest {
-            flow {
-                try {
-                    val courses = coursesRepository.getCourses()
-                    emit(courses)
-                } catch (e: Exception) {
-                    _coursesUiState.value = CoursesUiState.Error(e.message)
-                }
+    private val loadCoursesTriggerFlow = MutableSharedFlow<Unit>(replay = 1)
+    private val coursesFlow = loadCoursesTriggerFlow
+        .transformLatest {
+            try {
+                val courses = coursesRepository.getCourses()
+                emit(courses)
+            } catch (e: Exception) {
+                _coursesUiState.value = CoursesUiState.Error(e.message)
             }
         }
     private val bookmarksFlow = bookmarksRepository.courses
@@ -69,7 +66,7 @@ class HomeScreenViewModel(
     fun loadCourses() {
         _coursesUiState.value = CoursesUiState.Loading
         viewModelScope.launch {
-            loadCoursesTrigger.emit(Unit)
+            loadCoursesTriggerFlow.emit(Unit)
         }
     }
 
